@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content−type" content="text/html ;charset=utf−8"/>
+		<meta http-equiv="content−language" content="fr"/>
+		<meta charset="utf−8"/>
+		<meta name="viewport" content="width=device−width, initial−scale=1.0"/>
+		<meta name="author" content="Thiolon Louis"/>
+		<meta name="keywords" content="test,html"/>
+		<meta name="description" content="page d'accueil"/>
+		<title>Auvergnat Tacos</title>
+		<style type="text/css">
+			img{
+				max-width: 100%;
+				height: auto;
+				width: auto\9;
+			}
+			@media screen and(max-width : 400px)
+			{
+				img{
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<FORM method="GET" name="ajax" action="" id="formtest">
+        	<INPUT  type="text" id="text" name="dyn"  value="">
+        	<input type="submit" id="test" value="Envoyer" >
+    	</FORM>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		var submit=document.getElementById("formtest");
+
+		submit.addEventListener("submit",function(event){ 
+		    event.preventDefault();
+		  //   var xhr; 
+		  //   try {  xhr = new ActiveXObject('Msxml2.XMLHTTP');   }
+		  //   catch (e) 
+		  //   {
+		  //       try {   xhr = new ActiveXObject('Microsoft.XMLHTTP'); }
+		  //       catch (e2) 
+		  //       {
+		  //          try {  xhr = new XMLHttpRequest();  }
+		  //          catch (e3) {  xhr = false;   }
+		  //        }
+		  //   }
+		  
+		  //   xhr.onreadystatechange  = function() 
+		  //   { 
+		  //      if(xhr.readyState  == 4)
+		  //      {
+		  //       if(xhr.status  == 200) 
+		  //       {
+		  //           document.ajax.dyn="Received:"  + xhr.responseText; 
+				// 	 console.log(xhr.responseText); 
+				// 	 var text=document.getElementById("text");
+				// 	 console.log(text.value);
+		  //       }
+		  //       else
+
+		  //           document.ajax.dyn="Error code " + xhr.status;
+		  //       }
+		  //   }; 
+		 	// //  Assigner le fichier XML à une variable
+
+		  //  xhr.open("GET", "htbin/chatget.py",  true);
+		  //  xhr.send(null);
+			  $.getJSON( "htbin/chatget.py", function( data ) {
+			  var items = [];
+			  $.each( data, function( key, val ) {
+			  	console.log(key+"  "+val.user);
+			  });
+			});
+			$.post( "test.php", { name: "John", time: "2pm" })
+  			.done(function( data ) {
+    			alert( "Data Loaded: " + data );
+ 			 });
+		 
+		});
+	</script>
+</html>
