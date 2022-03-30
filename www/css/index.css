@@ -1,0 +1,73 @@
+.block-header
+{
+    padding: 10px;
+    background-color: #0000006b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.block-header p
+{
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 60px;
+    height: auto;
+    font-family: Aller;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.block-header a
+{
+    color: white;
+    text-decoration: blink;
+    font-family: Aller;
+    font-size: 33px;
+    height: auto;
+    margin-right: 100px;
+}
+.block-navigation
+{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: space-between;
+}
+.block-test
+{
+    display: flex;
+    background-color: #0000006b;
+}
+body
+{
+    margin: 0px;
+    color: white;
+}
+@font-face
+{
+    font-family: Aller;
+    src: url(Jost-Bold.ttf);
+}
+.block-footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: #0c1621;
+    align-items: center;
+    height: 75px;
+    font-family: Aller;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+}
+body 
+{
+    font-size: 17px;
+    margin: 0px;
+    background: #ecdfdf;
+    background-image:url(tacos.jpg);
+    background-size : 100%;
+    background-color: rgba(0,0,0,2);
+    font-family: Aller;
+}
