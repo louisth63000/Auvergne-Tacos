@@ -11,7 +11,7 @@
 		<meta name="description" content="page d'accueil"/>
 		<title>Auvergnat Tacos</title>
 		<style type="text/css">
-			@media screen and (max-width: 1000px) {
+			@media only screen and (max-width: 1000px) {
 	  			section{
 	  				width: 100%;
 	  			}
@@ -20,6 +20,48 @@
 	  			}
 	  			figure {
 	  				display: none;
+	  			}
+			}
+			@media screen and (max-device-width: 800px){
+	  			.block-logo p{
+	  				display: none;
+	  			}
+	  			.block-logo a{
+	  				display: flex;
+	  				align-items: center;
+    				justify-content: center;
+    				margin-right: 60px;
+    				flex-wrap: wrap;
+	  			}
+	  			.block-navigation{
+	  				display: initial;
+	  			}
+			}
+			@media screen and (max-width: 800px) {
+	  			.block-logo p{
+	  				display: none;
+	  			}
+	  			.block-logo a{
+	  				display: flex;
+	  				align-items: center;
+    				justify-content: center;
+    				margin-right: 60px;
+    				flex-wrap: wrap;
+	  			}
+	  			.block-navigation{
+	  				display: initial;
+	  			}
+	  			.block-test-3 .block-info h3
+	  			{
+	  				margin-top: 4%;
+    				margin-bottom: 4%;
+	  				font-size: 100%;
+	  			}
+	  			.block-test-3 .block-info p
+	  			{
+	  				font-size: 80%;
+	  				margin-top: 5%;
+    				margin-bottom: 5%;
 	  			}
 			}
 		</style>
@@ -63,8 +105,8 @@
 					<p>Logoden biniou degemer mat an penn ar bed diwezhat mervel mouezh, gwellañ roc’h daouarn gwelloc’h ac'hanoc'h gloan penn peoc’h beajourien tann, pegement eo kerf aes tarv labourat pad loa traoñ. Eost panevet  Planvour gwriat Entraven eil Pornizhan c’higer legumaj ha karrezek, ni e lann ennon daou ur Pederneg kuzh milin yar, dant ouzhit kouezhañ wrierez reolenn vaneg egiston gwer c’hezeg. Niverenn warnomp he c’hwi mouchouer c’hastell c’horf kenwerzh mervel montr mamm, honnezh gouren ledan gouel medisin kaout skignañ berr eus tiegezh, Tregastell ma ugnet c’henderv chapel dra an a un. Wern heol bazh park endervezh evel  tann ha mel lezenn enor, enni karrez Muzilheg hanter ledan mesk neuiñ chaseour holl kanañ, dud o galleg logoden kae kasoni pell hag vi.</p>
 				</section>
 			</article>
-			<article class="block-test">
-				<div>
+			<article class="block-test-3">
+				<div class="block-info">
 					<h3>Choix</h3>
 					<section>
 						<p>kilpenn gwinegr kador goulenn </p>
@@ -74,7 +116,7 @@
 						<figcaption>Image Tacos</figcaption>
 					</figure>
 				</div>
-				<div>
+				<div class="block-info">
 					<h3>Livraison</h3>
 					<section>
 						<p>kilpenn gwinegr kador goulenn </p>
@@ -84,7 +126,7 @@
 						<figcaption>Livraison</figcaption>
 					</figure>
 				</div>
-				<div>
+				<div class="block-info">
 					<h3>Produit locaux</h3>
 					<section>
 						<p>kilpenn gwinegr kador goulenn </p>
@@ -94,7 +136,7 @@
 						<figcaption>Image Tacos</figcaption>
 					</figure>
 				</div>
-				<div>
+				<div class="block-info">
 					<h3>Horaire</h3>
 					<section>
 						<p>kilpenn gwinegr kador goulenn </p>
@@ -110,7 +152,7 @@
             <div class="block-footer">
                 <div class="block-navigation-footer">
                     <p >@2022 Auvergnat Tacos</p>
-                    <p>Louis Thiolon , Waid Assafiri</p>
+                    <p>Louis Thiolon , Walid Assafiri</p>
                 </div>
             </div>
         </footer>
