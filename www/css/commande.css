@@ -1,0 +1,110 @@
+body 
+{
+    font-size: 17px;
+    margin: 0px;
+    background: #ecdfdf;
+    background-image:url(tacos.jpg);
+    background-size : 100%;
+    background-color: rgba(0,0,0,2);
+    font-family: Aller;
+}
+.block-header
+{
+    padding: 10px;
+    background-color: #0000006b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    
+}
+.block-header p
+{
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 60px;
+    height: auto;
+    font-family: Aller;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.block-header a
+{
+    color: white;
+    text-decoration: blink;
+    font-family: Aller;
+    font-size: 33px;
+    height: auto;
+    margin-right: 100px;
+}
+.block-navigation
+{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: space-between;
+}
+@font-face
+{
+    font-family: Aller;
+    src: url(Jost-Bold.ttf);
+}
+.block-footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: #00000052;
+    align-items: center;
+    height: 75px;
+    font-family: Aller;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+}
+.block-navigation-footer p
+{
+    margin: 0px;
+}
+p{
+    font-size: 23px
+}
+form input[type="text"] {
+    width: 80%;
+    border-radius: 11px;
+    border: 1px solid #dee0e4;
+    padding: 0 2%;
+}
+h2
+{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 37px;
+}
+button {
+
+    cursor: pointer;
+    height: 60px;
+    font-size: 25px;
+    font-family: Aller;
+    color: white;
+    background-color: #4dad35;
+    border-radius: 11px;
+}
+.block-chat
+{
+    margin: 30px;
+    height: 640px;
+    background-color: #0000008c;
+    border-radius: 35px;
+}
+.container-chat
+{
+    height: 87%;
+}
+form
+{
+    display: flex;
+    justify-content: center;
+}

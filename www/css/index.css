@@ -131,3 +131,29 @@ body
     background-color: rgba(0,0,0,2);
     font-family: Aller;
 }
+.block-test-4
+{
+    display: flex;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000b5;
+}
+.liste-puce
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+}
+li{
+    font-size: 21px;
+    margin: 3%;
+} 
+ul{
+    font-size: 17px;
+}
