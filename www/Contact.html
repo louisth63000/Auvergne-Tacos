@@ -28,7 +28,7 @@
 			<div class="block-central">
 				<div class="block-form">
 					 <h1 id="title" class="titre">Inscription</h1>
-	                    <form name="regForm" method="post" class="container">
+	                    <form name="regForm" method="post" id="form-sub" class="container">
 							<p id="error"></p>
 							<div class="form-group">
 								
@@ -55,7 +55,7 @@
 	                            <input id="email"type="text" name="adresse-mail" placeholder="mail">
 							</div>
 							<div class="form-group">
-								<button type="submit" id="submit" class="bouton-envoyer">
+								<button type="submit" class="bouton-envoyer">
 								  Inscription
 								</button>
 							  </div>
@@ -65,17 +65,17 @@
 			</div>
 			<div class="block-form">
 				 <h1 id="title" class="titre">Connexion</h1>
-                    <form name="regForm" method="post" class="container">
-						<p id="error"></p>
+                    <form name="regForm" method="post" id="form-sub2" class="container">
+						<p id="error2"></p>
 						<div class="form-group">
                             <label >Nom d'utilisateur:</label >
-                            <input id="username"type="text" name="nom d'utilisateur" placeholder="nom d'utilisateur" required>
+                            <input id="username2"type="text" name="nom d'utilisateur" placeholder="nom d'utilisateur" required>
 						<div class="form-group">
                             <label >Mot de passe:</label >
-                            <input id="mdp"type="password" name="mdp" placeholder="motdepasse" >
+                            <input id="mdp2"type="password" name="mdp" placeholder="motdepasse" >
 						</div>
 						<div class="form-group">
-							<button type="submit" id="submit" class="bouton-envoyer">
+							<button type="submit2" id="submit" class="bouton-envoyer">
 							  Connexion
 							</button>
 						  </div>
@@ -93,5 +93,6 @@
     		</div>
     	</footer>
 		<script src="formulaire.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</body>
 </html>
